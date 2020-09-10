@@ -1,0 +1,11 @@
+{% extends 'testapp/base.html' %}
+  {%block body %}
+    <div class="conatiner">
+      <h1>Singup To Enjoy facilities</h1>
+      <form method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Signup">
+      </form>
+    </div>
+  {% endblock %}
